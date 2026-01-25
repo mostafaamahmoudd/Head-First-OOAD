@@ -1,0 +1,255 @@
+# Well-Designed Apps Rock
+
+## Different Views of “Great Software”
+
+### The customer-friendly programmer says:
+
+> “Great software always does what the customer wants it to. So even if customers think of new ways to use the software, it doesn’t break or give them unexpected results.”
+
+### The object-oriented programmer says:
+
+> “Great software is code that is object-oriented. So there’s not a bunch of duplicate code, and each object pretty much controls its own behavior. It’s also easy to extend because your design is really solid and flexible.”
+
+### The design-guru programmer says:
+
+> “Great software is when you use tried-and-true design patterns and principles. You’ve kept your objects loosely coupled, and your code open for extension but closed for modification. That also helps make the code more reusable, so you don’t have to rework everything to use parts of your application over and over again.”
+
+**Design patterns**
+
+---
+
+## Great Software Is More Than Just One Thing
+
+### First: Satisfy the Customer
+
+Great software must do what the customer wants it to do.
+
+#### Win your customers over
+
+Customers will think your software is great when it does what it’s supposed to do.
+
+> It’s not enough to just have software that works like the customer wants it to; your software must be able to stand the test of time.
+
+---
+
+### Second: Be Well-Designed
+
+Great software is well-designed, well-coded, and easy to maintain, reuse, and extend.
+
+> Make your code as smart as you are.
+> You (and your co-workers) will think your software is great when it’s easy to maintain, reuse, and extend.
+
+---
+
+## Great Software in 3 Easy Steps
+
+1. **Make sure your software does what the customer wants it to do**
+   This step focuses on the customer. Make sure the app does what it’s supposed to do first. This is where getting good requirements and doing some analysis comes in.
+
+2. **Apply basic OO principles to add flexibility**
+   Once your software works, look for duplicate code and make sure you’re using good object-oriented programming techniques.
+
+3. **Strive for a maintainable, reusable design**
+   When you have a good object-oriented app that works, apply patterns and principles to make sure your software is ready to be used for years to come.
+
+Every step leads to the next.
+
+---
+
+## Important Principles
+
+### Don’t create problems to solve problems.
+
+### Enums
+
+One of the big advantages of using enums is that they limit the possible values you can supply to a method. This eliminates misspellings and case issues.
+
+---
+
+## Questions: ENUMs
+
+### What are ENUMs, exactly?
+
+Enumerated types let you define a type name (such as `Wood`) and a fixed set of values (such as `COCOBOLO`, `SITKA`, and `MAHOGANY`).
+You refer to a value like this:
+
+```java
+Wood.COCOBOLO
+```
+
+---
+
+### Why are enumerated types so helpful?
+
+Enums protect methods and classes from invalid values.
+
+They provide:
+
+* Type safety
+* Value safety
+
+This helps prevent bad data when dealing with a known set of legal values.
+
+---
+
+### Is it OK to do a little design during Step 1?
+
+Yes, as long as your focus remains on the customer’s needs.
+
+You want the core functionality in place before making major design changes, but you can still apply good OO principles early to avoid poor design.
+
+---
+
+## Robust Code
+
+Code that is not fragile is generally referred to as robust code.
+
+---
+
+## Object Responsibilities
+
+In well-designed systems:
+
+* Objects have clearly defined responsibilities
+* Each object focuses on doing its own job well
+* Objects should not be used for tasks outside their purpose
+
+---
+
+## Encapsulation
+
+### What Is Encapsulation?
+
+Encapsulation is hiding the implementation of a class while clearly defining what it does.
+
+* The class behaves like a black box
+* Users interact through a well-defined interface
+* This supports the Open-Closed Principle
+
+Encapsulation protects information and ensures correct usage of behavior.
+
+---
+
+### Questions About Encapsulation
+
+**Q: Is encapsulation just about making variables private?**
+**A:** No. Encapsulation is about separating information so other parts of the application cannot misuse it. Member variables are often private, and access is provided through controlled methods.
+
+---
+
+**Q: Is encapsulation only about data protection?**
+**A:** No. Encapsulation also applies to behavior. By placing logic inside methods, you separate behavior from the rest of the application and prevent improper usage.
+
+---
+
+### Why Encapsulation Matters
+
+* Separates data from behavior
+* Controls how parts of the application are used
+* Allows changes without affecting unrelated components
+
+In general, encapsulate parts of the application that may change and protect those that remain stable.
+
+---
+
+## UML and Class Diagrams
+
+### UML (Unified Modeling Language)
+
+UML is a language used to communicate the structure of an application without unnecessary implementation details.
+
+---
+
+### Questions About UML
+
+**Q: Are class diagrams complete representations of a class?**
+**A:** No. Class diagrams show only essential variables and methods. They are meant for communication, not full implementation.
+
+---
+
+**Q: Who created UML?**
+**A:** UML was developed by Rational Software under the leadership of Grady Booch, Ivar Jacobson, and Jim Rumbaugh. It is now maintained by the Object Management Group (OMG).
+
+---
+
+## Design Once, Design Twice
+
+After applying basic OO principles, revisit your design to ensure it is reusable and extensible.
+
+---
+
+## Delegation
+
+### What Is Delegation?
+
+Delegation is when an object forwards a task to another object to handle on its behalf.
+
+Example:
+Instead of `Inventory.search()` comparing specifications directly, it asks `GuitarSpec` to perform the comparison.
+
+---
+
+### Why Delegation Matters
+
+* Improves reusability
+* Encourages loose coupling
+* Keeps responsibilities in the correct place
+
+---
+
+### Loose Coupling
+
+Loosely coupled objects:
+
+* Have a single responsibility
+* Are independent of each other
+* Are easier to change, extend, and reuse
+
+---
+
+## Object-Oriented Analysis & Design (OOA&D)
+
+OOA&D is an approach to building software that ensures:
+
+* The software does what it’s supposed to do
+* The design is flexible
+* The code is maintainable and reusable
+
+It focuses on results, not unnecessary documentation.
+
+---
+
+## Customer Satisfaction
+
+### Applications That Work
+
+Good requirements and use cases ensure correct functionality.
+
+### Applications That Keep Working
+
+Well-designed systems are robust and resistant to unexpected usage.
+
+### Applications That Can Be Upgraded
+
+Encapsulation, composition, and delegation make systems extensible.
+
+---
+
+## Programmer Satisfaction
+
+* Reusable components
+* Flexible architectures
+* Use of SRP and OCP
+* Refactoring toward better design
+
+---
+
+## Key Bullet Points
+
+* Fragile applications break easily
+* Encapsulation and delegation increase flexibility
+* Always begin with customer requirements
+* Refine design after functionality is correct
+* Separate what changes from what does not
+* Poor design leads to technical debt and maintenance issues
+* OOA&D helps satisfy both customers and developers
